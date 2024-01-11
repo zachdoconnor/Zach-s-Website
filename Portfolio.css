@@ -1,0 +1,129 @@
+html, body {
+    height: 100%; /* Ensures the html and body take full height of the viewport */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+    background-color: #f7f9fc;
+    line-height: 1.6;
+	flex: 1;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 5px 15px;
+    margin: 20px; /* Reduced margin for header */
+    border-radius: 5px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header a {
+    color: #ffffff; /* Sets the color of links to white */
+    text-decoration: none; /* Optional: Removes the underline from links */
+}
+
+header a:hover {
+    color: #cccccc; /* Optional: Changes color on hover for a nice effect */
+    text-decoration: underline; /* Optional: Adds underline on hover */
+}
+
+h2 {
+    border-bottom: 2px solid #333; /* Solid underline, 2 pixels thick, black color */
+    display: inline-block; /* Makes the border extend only the width of the text */
+    padding-bottom: 5px; /* Adjusts space between text and underline */
+    margin-bottom: 20px; /* Optional: Adjusts space between the h2 and content below it */
+}
+
+.main-content {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px; /* Reduced margin for main content */
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+nav {
+	background-color: #1a1a1a;
+    text-align: center;
+    width: 100%; /* Ensures the nav occupies the full width */
+}
+
+nav ul {
+    padding: 10px 0;
+    list-style-type: none;
+    margin: 0 auto; /* Centers the list items */
+    display: inline-block; /* Aligns the list items in a line */
+	padding: 20px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    background-color: #4a4a4a;
+}
+
+section {
+    padding: 20px 40px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.about-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: space-around; /* Distributes space around items */
+    padding: 20px;
+}
+
+.about-img {
+    max-width: 250px;
+    border-radius: 50%;
+    margin-left: 20px; /* Adds space between the text and the image */
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        margin: 20px; /* Adjust for smaller screens if needed */
+        padding: 5px 10px; /* You can adjust padding as well */
+    }
+
+    nav ul li a {
+        padding: 10px 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
